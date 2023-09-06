@@ -8,7 +8,7 @@ module.exports = (env, args) => {
     return {
         // devtool: isProd? false : 'eval-source-map',
         // entry: './src/index.ts', // 최상위 자바스크립트 파일
-        entry: './src/bridge/index.ts',
+        entry: './src/decorator/index.ts',
         resolve: {
             extensions: ['.ts', '.js']
         },
