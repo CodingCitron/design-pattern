@@ -8,7 +8,7 @@ module.exports = (env, args) => {
     return {
         // devtool: isProd? false : 'eval-source-map',
         // entry: './src/index.ts', // 최상위 자바스크립트 파일
-        entry: './src/mediator/index.ts',
+        entry: './src/memento/index.ts',
         resolve: {
             extensions: ['.ts', '.js']
         },
@@ -47,7 +47,7 @@ module.exports = (env, args) => {
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: 'public/mediator.html'
+                template: 'public/memento.html'
             }),
             new MiniCssExtractPlugin(),
         ]  
