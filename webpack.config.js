@@ -8,7 +8,7 @@ module.exports = (env, args) => {
     return {
         // devtool: isProd? false : 'eval-source-map',
         // entry: './src/index.ts', // 최상위 자바스크립트 파일
-        entry: './src/chain-of-responsibility/index.ts',
+        entry: './src/prototype/index.ts',
         resolve: {
             extensions: ['.ts', '.js']
         },
@@ -47,7 +47,7 @@ module.exports = (env, args) => {
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: 'public/chain-of-responsibility.html'
+                template: 'public/prototype.html'
             }),
             new MiniCssExtractPlugin(),
         ]  
