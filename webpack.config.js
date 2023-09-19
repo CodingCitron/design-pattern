@@ -8,7 +8,7 @@ module.exports = (env, args) => {
     return {
         // devtool: isProd? false : 'eval-source-map',
         // entry: './src/index.ts', // 최상위 자바스크립트 파일
-        entry: './src/abstract-factory/index.ts',
+        entry: './src/state/index.ts',
         resolve: {
             extensions: ['.ts', '.js']
         },
@@ -47,7 +47,7 @@ module.exports = (env, args) => {
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: 'public/abstract-factory.html'
+                template: 'public/state.html'
             }),
             new MiniCssExtractPlugin(),
         ]  
